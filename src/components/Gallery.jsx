@@ -8,9 +8,10 @@ const Gallery = () => {
 
 const GetData = async () => {
     const response = await  axios.get(`https://picsum.photos/v2/list?page=${page}&limit=18`);
-     
+    
     setUserdata(response.data)
 }
+
 
 
 
