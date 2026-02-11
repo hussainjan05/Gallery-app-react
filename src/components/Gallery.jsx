@@ -8,7 +8,7 @@ const Gallery = () => {
 
 const GetData = async () => {
     const response = await  axios.get(`https://picsum.photos/v2/list?page=${page}&limit=18`);
-    
+
     setUserdata(response.data)
 }
 
@@ -20,6 +20,8 @@ useEffect(function(){
     GetData()
 
 },[page])
+
+
 
 
 let printUserData = <div className='w-full bg-black h-[120vh] flex justify-center items-center '>
